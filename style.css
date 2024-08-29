@@ -40,12 +40,15 @@ body {
     height: 100%;
 }
 
-#menu p {
+#menu a {
     color: white;
     text-shadow: 2px 2px 0 black, -2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black;
     font-size: 1vw;
-    text-align: center;
-    }
+    text-align: right;
+
+}
+
+   
 
 button {
     position: fixed;
