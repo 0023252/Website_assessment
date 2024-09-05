@@ -8,6 +8,7 @@ html {
 
 body {
     background-color: black;
+    margin: 0;
 }
 
 .message {
@@ -30,7 +31,7 @@ body {
 .image img {
     width: 100%;
     height: auto;
-    }
+}
 
 #menu {
     opacity: 0.5;
@@ -42,7 +43,7 @@ body {
 
 #menu a {
     color: white;
-    font-size: 2vw;
+    font-size: 1.5vw;
     padding-right: 20px;
     padding-top: 10px;
 }
@@ -55,7 +56,8 @@ body {
 button {
     position: fixed;
     top: 0;
-    right: 1%;
+    right: 0;
     color: white;
-    background-color: black;
+    background-color: transparent;
+    border: none;
 }
