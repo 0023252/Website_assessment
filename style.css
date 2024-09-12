@@ -51,13 +51,13 @@ body {
 
 #menu p {
     text-align: right;
-    padding-top: 40px;
+    padding-top: 50px;
 }
    
 
 button {
     position: fixed;
-    top: 0;
+    top: 10px;
     right: 0;
     color: white;
     background-color: transparent;
