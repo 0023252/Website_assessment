@@ -33,6 +33,32 @@ body {
     height: auto;
 }
 
+
+
+#menu a {
+    color: white;
+    font-size: 1.2vw;
+    padding-right: 20px;
+    padding-top: 5px;
+    text-decoration: none;
+}
+
+#menu p {
+    text-align: right;
+    padding-top: 60px;
+    padding-right: 20px;
+}
+   
+
+button {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+/* menu div animation*/
 #menu {
     opacity: 0.5;
     background-color: black;
@@ -41,25 +67,6 @@ body {
     height: 100%;
 }
 
-#menu a {
-    color: white;
-    font-size: 1.5vw;
-    padding-right: 20px;
-    padding-top: 5px;
-    text-decoration: none;
-}
-
-#menu p {
-    text-align: right;
-    padding-top: 50px;
-}
+@keyframes menu-blur {
    
-
-button {
-    position: fixed;
-    top: 10px;
-    right: 0;
-    color: white;
-    background-color: transparent;
-    border: none;
 }
