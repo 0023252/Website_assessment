@@ -75,5 +75,14 @@ button {
 }
 
 
-   
+    
+#menu:active{
+    animation: menudown
+}
+
+
+@keyframes menudown{
+    from {top: -20px}
+    to {top: 0}
+}
 
