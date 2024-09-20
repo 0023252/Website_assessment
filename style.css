@@ -84,7 +84,10 @@ button {
     border: none;
     filter: drop-shadow(0.35rem 0.35rem 0.2rem rgb(0, 0, 0, 0.50));
 }
-   
+
+    button img:hover {
+        filter: drop-shadow(0.4rem 0.4rem 0.2rem rgb(255, 106, 0, 0.60))
+    }
 
 .X img {
     position: fixed;
