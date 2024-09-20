@@ -15,7 +15,8 @@ body {
     position: absolute;
     top: 5%;
     left: 2%;
-    color: white;
+    color: #fff;
+    font-family: 'Irish Grover', system-ui;
 }
 
 
@@ -23,7 +24,7 @@ body {
     position: absolute;
     top: 53%;
     left: 47%;
-    color: white;
+    color: #fff;
     transform: translate(-50%, -50%);
     font-family: 'Irish Grover', system-ui;
     text-align: center;
@@ -85,9 +86,9 @@ button {
     filter: drop-shadow(0.35rem 0.35rem 0.2rem rgb(0, 0, 0, 0.50));
 }
 
-    button img:hover {
-        filter: drop-shadow(0.4rem 0.4rem 0.2rem rgb(255, 106, 0, 0.60))
-    }
+button img:hover {
+    filter: drop-shadow(0.4rem 0.4rem 0.2rem rgb(255, 106, 0, 0.60))
+}
 
 .X img {
     position: fixed;
