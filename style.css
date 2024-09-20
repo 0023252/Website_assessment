@@ -11,6 +11,14 @@ body {
     margin: 0;
 }
 
+.name{
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    color: white;
+}
+
+
 .message {
     position: absolute;
     top: 50%;
@@ -34,7 +42,7 @@ body {
 .image img {
     width: 100%;
     height: auto; 
-    filter: contrast(120%) brightness(100%);
+    filter: contrast(120%) brightness(100%) saturate(1.5);
 }
 
 
@@ -74,15 +82,17 @@ button {
     color: white;
     background-color: transparent;
     border: none;
+    filter: drop-shadow(0.35rem 0.35rem 0.2rem rgb(0, 0, 0, 0.50));
 }
+   
 
 .X img {
     position: fixed;
-    top: 30px;
-    right: 50px;
+    top: 10px;
+    right: 30px;
     color: white;
     background-color: transparent;
-    border: none;
+    border: none;   
 }
 
  
