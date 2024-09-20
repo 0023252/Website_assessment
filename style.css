@@ -21,7 +21,7 @@ body {
 
 .message {
     position: absolute;
-    top: 50%;
+    top: 53%;
     left: 47%;
     color: white;
     transform: translate(-50%, -50%);
