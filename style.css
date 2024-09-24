@@ -21,9 +21,9 @@ body {
     text-decoration: none;
 }
 
-    .name a:hover {
-        text-shadow: 1px 1px 10px #ff6a00, -1px 1px 10px #ff6a00, -1px -1px 10px #ff6a00, 1px -1px 10px #ff6a00;
-    }
+.name a:hover {
+    text-shadow: 1px 1px 10px #ff6a00, -1px 1px 10px #ff6a00, -1px -1px 10px #ff6a00, 1px -1px 10px #ff6a00;
+}
 
 .message {
     position: absolute;
