@@ -6,15 +6,16 @@ html {
     width: 100%;
 }
 
-body {
+/*homepage body*/ 
+.homepage{
     background-color: black;
     margin: 0;
 }
-
+/*website name in homepage*/
 .name a{
-    position: absolute;
+    position: fixed;
     top: 5%;
-    left: 2%;
+    left: 3%;
     font-size: 1.5vw;
     color: white;
     text-shadow: 1px 1px 4px black, -1px -1px 4px black, -1px 1px 4px black, 1px -1px 4px black;
@@ -63,7 +64,7 @@ body {
 #menu p {
     text-align: right;
     padding-right: 20px;
-    padding-top: 60px;
+    padding-top: 70px;
     filter: none;
 }
 
@@ -81,10 +82,10 @@ body {
 }
 
 
-button {
+.menu_button {
     position: fixed;
-    top: 10px;
-    right: 20px;
+    top: 3%;
+    right: 2%;
     color: white;
     background-color: transparent;
     border: none;
@@ -95,13 +96,30 @@ button img:hover {
     filter: drop-shadow(0.4rem 0.4rem 0.2rem rgb(255, 106, 0, 0.60))
 }
 
-.X img {
+.X {
     position: fixed;
-    top: 10px;
-    right: 30px;
+    top: 4%;
+    right: 3%;
     color: white;
     background-color: transparent;
     border: none;   
 }
 
  
+/*audio*/
+.audio_container{
+    position: absolute;
+    top: 80%;
+    left: 3%;
+}
+
+.sharepage {
+    background-color: #3f3f3f;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #c58a2c;
+    display: block;
+}

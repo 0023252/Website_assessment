@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 
+
+<!-- don't forget to change the title after coming up with the website name-->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -12,21 +14,31 @@
 
 
 
-<body>
+<body class = "homepage">
     
     <!-- image div -->
     <!-- remember to add some infos about the website under the image block (the about page is removed for that)-->
     <div class="image">
         <img src="unsplash(4).jpg" type=image/jpg>
         
-        <div class = "name">
-             <a href = "home.html">Website name</a>
+        <div class = "audio_container">
+            <audio controls loop>
+                <source src = "audiomass-output.mp3" type = "audio/mpeg"/> 
+            </audio>
         </div>
         
         <div class="message">
             A Place to Express Yourself <p>and be Known</p>
         </div>
     </div>
+
+
+    <!--website name-->
+    <div class = "name">
+        <a href = "home.html">Website name</a>
+   </div>
+
+
     <!-- menu -->
     <div popover id = "menu">
         <p><a href = "home.html">Home</a></p>
@@ -39,15 +51,11 @@
     </div>
 
 
-    <button  popovertarget="menu" >
+    <button class = "menu_button" popovertarget="menu" >
        <img width = "70" src = "burger-menu-right-svgrepo-com.png" type = image/png>
     </button> 
 
-    <div class = "audio container">
-        <audio controls loop>
-            <source src = "audiomass-output.mp3" type = "audio/mpeg"/> 
-        </audio>
-    </div>
+    
 
 
 
