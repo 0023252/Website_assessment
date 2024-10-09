@@ -14,8 +14,8 @@ html {
 /*website name in homepage*/
 .name a{
     position: fixed;
-    top: 5%;
-    left: 3%;
+    top: 7%;
+    left: 4%;
     font-size: 1.5vw;
     color: white;
     text-shadow: 1px 1px 4px black, -1px -1px 4px black, -1px 1px 4px black, 1px -1px 4px black;
@@ -85,7 +85,7 @@ html {
 .menu_button {
     position: fixed;
     top: 3%;
-    right: 2%;
+    right: 3%;
     color: white;
     background-color: transparent;
     border: none;
@@ -119,10 +119,12 @@ button img:hover {
     background-color: #3f3f3f;
 }
 
-.header {
-    width: 100%;
-    height: 100px;
-    background-color: #c5864f;
-    display: block;
-    margin: 0;
+.share_header {
+    color: white;
+  height: 100px;
+  background: linear-gradient( #cdb787 10%, #cbb896 50%, #e87715 );
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 100px;
 }
