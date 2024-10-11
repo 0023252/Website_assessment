@@ -16,7 +16,7 @@ html {
     position: fixed;
     top: 7%;
     left: 4%;
-    font-size: 2vw;
+    font-size: 2.5vw;
     font-family: 'Irish Grover', system-ui;
     color: white;
     text-shadow: 1px 1px 4px black, -1px -1px 4px black, -1px 1px 4px black, 1px -1px 4px black;
@@ -120,25 +120,28 @@ button img:hover {
 /*share.html styles*/
 
 .sharepage {
-    background-color: #6e6c6c;
+    background-color: #ffffff;
+    margin: 0;
 }
 
 .share_header {
     color: white;
     height: 100px;
-    background: linear-gradient( #cdb787 10%, #cbb896 50%, #e87715 );
+    background: linear-gradient( #f0e0be 5%, #dbcc6b 30%, #e87715 );
     display: block;
-    margin: 0;
     width: 100%;
     height: 100px;
+    overflow: hidden;
 }
+
+
 /*columns*/
 
-.share_row {
+.share_row :after{
     display: table;
     clear: both;
 }
-
+/*
 .logo_column {
     float: left;
     width: 50%;
@@ -147,7 +150,7 @@ button img:hover {
     border: 3px solid rgb(0, 0, 0);  
 
 }
-
+*/
 .share_column {
     float: right;
     width: 50%;
@@ -155,3 +158,9 @@ button img:hover {
     box-sizing: border-box;
     border: 3px solid rgb(0, 0, 0);  
 }
+
+@media screen and (max-width: 600px) {
+    .share_column {
+      width: 100%;
+    }
+  }
