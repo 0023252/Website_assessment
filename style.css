@@ -14,7 +14,7 @@ html {
 /*website name in homepage*/
 .name a{
     position: fixed;
-    top: 7%;
+    top: 5%;
     left: 4%;
     font-size: 2.5vw;
     font-family: 'Irish Grover', system-ui;
@@ -56,8 +56,8 @@ html {
 
 
 #menu a {
-    color: white;
-    font-size: 1.5vw;
+    color: #ffffff;
+    font-size: 2vw;
     padding-right: 20px;
     text-decoration: none;
 }
@@ -65,8 +65,9 @@ html {
 #menu p {
     text-align: right;
     padding-right: 20px;
-    padding-top: 70px;
+    padding-top: 10%;
     filter: none;
+    
 }
 
 #menu p:hover {
@@ -81,6 +82,7 @@ html {
     width: 100%;
     height: 100%;
 }
+
 
 
 .menu_button {
@@ -115,52 +117,87 @@ button img:hover {
 }
 
 
-
+/*------------------------------------------------------------------------------------*/
 
 /*share.html styles*/
 
 .sharepage {
     background-color: #ffffff;
     margin: 0;
+    background: linear-gradient( #ffffff 5%, #b3b3b3 70%, #5d5d5d)
 }
 
 .share_header {
-    color: white;
-    height: 100px;
-    background: linear-gradient( #f0e0be 5%, #dbcc6b 30%, #e87715 );
     display: block;
+    position: sticky;
+    top: 0;
+    color: white;
+    background: linear-gradient( #f0e0be 5%, #dbcc6b 30%, #e87715 );
     width: 100%;
     height: 100px;
-    overflow: hidden;
 }
 
+/*website name in sharepage*/
+.header_name a{
+    position: fixed;
+    top: 5%;
+    left: 4%;
+    font-size: 30px;
+    font-family: 'Irish Grover', system-ui;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px black, -1px -1px 4px black, -1px 1px 4px black, 1px -1px 4px black;
+    text-decoration: none;
+}
+
+.header_name a:hover {
+    text-shadow: 1px 1px 10px #ff6a00, -1px 1px 10px #ff6a00, -1px -1px 10px #ff6a00, 1px -1px 10px #ff6a00;
+}
 
 /*columns*/
+
+.share_row {
+    padding: 5%;
+}
 
 .share_row :after{
     display: table;
     clear: both;
 }
-/*
+
 .logo_column {
     float: left;
     width: 50%;
-    height: 200px;
+    height: 300px;
     box-sizing: border-box;
-    border: 3px solid rgb(0, 0, 0);  
+    border-right: 3px solid rgb(0, 0, 0); 
+    border-right-style: inset; 
 
 }
-*/
+
 .share_column {
     float: right;
     width: 50%;
-    height: 200px;
+    height: 300px;
     box-sizing: border-box;
-    border: 3px solid rgb(0, 0, 0);  
+    border-left: 3px solid rgb(0, 0, 0);
+    border-left-style: outset;  
 }
 
+
+
+/*responsive columns*/
 @media screen and (max-width: 600px) {
     .share_column {
       width: 100%;
+      border-top: 3px solid black;
+      border-top-style: outset;
+      border-left: none; 
+    }
+
+    .logo_column {
+        width: 100%;
+        border-bottom: 3px solid black;
+        border-right-style: inset;
+        border-right: none;
     }
   }
