@@ -53,21 +53,24 @@ html {
     filter: contrast(120%) brightness(100%) saturate(1.5) blur(5px);
 }
 
-
+/*styling the menu*/
 
 #menu a {
     color: #ffffff;
     font-size: 2vw;
     padding-right: 20px;
     text-decoration: none;
+   
+}
+
+.menu_container {
+    padding-top: 3%;   
 }
 
 #menu p {
     text-align: right;
     padding-right: 20px;
-    padding-top: 10%;
-    filter: none;
-    
+    padding-top: 3%;
 }
 
 #menu p:hover {
@@ -107,6 +110,18 @@ button img:hover {
     background-color: transparent;
     border: none;   
 }
+/*responsive padding adjustment for different sized screens*/
+@media screen and (max-width: 600px) {
+    .menu_container {
+        padding-top: 12%;
+    }
+    #menu a {
+        font-size: 3vw;
+    }
+    #menu p {
+        padding-top: 3%;
+    }
+}
 
  
 /*audio*/
@@ -122,9 +137,9 @@ button img:hover {
 /*share.html styles*/
 
 .sharepage {
-    color: #ffffff;
+    background-color: #000000;
     margin: 0;
-    background: linear-gradient(#b7b7b7 5%, #8b8b8b 70%, #4b4a4a);
+    /*background: linear-gradient(#b7b7b7 5%, #8b8b8b 70%, #4b4a4a);*/
 }
 
 .share_header {
@@ -132,9 +147,9 @@ button img:hover {
     position: sticky;
     top: 0;
     background-color: #000000;
-   /* background: linear-gradient( #f0e0be 10%, #dbcc6b 30%, #e87715);*/
+    background: linear-gradient( #f0e0be 10%, #dbcc6b 30%, #e87715 80%, #000000);
     width: 100%;
-    height: 100px;
+    height: 130px;
 }
 
 /*website name in sharepage*/
@@ -205,8 +220,8 @@ button img:hover {
         border-right-style: inset;
         border-right: none;
     }
-/*
+
     .share_row {
-        padding: 9%;
-    }*/
+        padding: 10%;
+    }
   }
