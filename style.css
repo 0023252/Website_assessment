@@ -27,6 +27,14 @@ html {
     text-shadow: 1px 1px 10px #ff6a00, -1px 1px 10px #ff6a00, -1px -1px 10px #ff6a00, 1px -1px 10px #ff6a00;
 }
 
+.name img {
+    position: fixed;
+    top: 2%;
+    left: 6%;
+    width: 5%;
+    height: auto;
+}
+
 .message {
     position: absolute;
     top: 50%;
