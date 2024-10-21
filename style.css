@@ -58,7 +58,7 @@ html {
 .image img {
     width: 100%;
     height: auto;
-    filter: contrast(120%) brightness(100%) saturate(1.5) blur(5px);
+    filter: contrast(130%) brightness(100%) saturate(1.5) blur(5px);
 }
 
 /*styling the menu*/
@@ -161,14 +161,11 @@ button img:hover {
 }
 
 /*making the hamburger menu stick with the header*/
-.header_menu {
+.menu_button img {
     position: relative;
-    width: 50%;
-    height: 130px;
-}
-
-.header_menu .menu_button {
-    position: relative;
+    top: 0;
+    right: 0;
+    
 }
 
 
@@ -208,7 +205,7 @@ button img:hover {
     padding: 5%;
 }
 
-.share_row :after{
+.share_row::after{
     display: table;
     clear: both;
 }
@@ -229,8 +226,8 @@ button img:hover {
 .logo_column img {
     width: 70%;
     height: auto;
-   /* position: relative;
-    background-color: transparent;*/
+    position: relative;
+    background-color: transparent;
 }
 
 .share_column {
