@@ -27,13 +27,7 @@ html {
     text-shadow: 1px 1px 10px #ff6a00, -1px 1px 10px #ff6a00, -1px -1px 10px #ff6a00, 1px -1px 10px #ff6a00;
 }
 
-.name img {
-    position: fixed;
-    top: 2%;
-    left: 6%;
-    width: 5%;
-    height: auto;
-}
+
 
 .message {
     position: absolute;
@@ -107,7 +101,7 @@ html {
 }
 
 button img:hover {
-    filter: drop-shadow(0.4rem 0.4rem 0.2rem rgb(255, 106, 0, 0.60))
+    filter: drop-shadow(0.4rem 0.4rem 0.2rem #ff6600)
 }
 
 .X {
@@ -161,11 +155,10 @@ button img:hover {
 }
 
 /*making the hamburger menu stick with the header*/
-.menu_button img {
+.share_header .menu_button img {
     position: relative;
     top: 0;
     right: 0;
-    
 }
 
 
@@ -177,17 +170,12 @@ button img:hover {
     position: relative;
 }
 
-.header_name img {
-    position: absolute;
-    top: 10%;
-    left: 5%;
-    width: 20%;
-}
+
 
 .header_name a{
     position: absolute;
     top: 30%;
-    left: 30%;
+    left: 10%;
     font-size: 30px;
     font-family: 'Irish Grover', system-ui;
     color: #ffffff;
@@ -210,30 +198,36 @@ button img:hover {
     clear: both;
 }
 
+/*logo column*/
 .logo_column {
     float: left;
     width: 50%;
-    height: 400px;
+    height: 500px;
     box-sizing: border-box;
     border-right: 3px solid #b95d20; 
     border-right-style: inset; 
     color: #ffffff;
 }
 .logo_column img:hover {
-    box-shadow: 1px 1px 10px #ff6a00, -1px 1px 10px #ff6a00, -1px -1px 10px #ff6a00, 1px -1px 10px #ff6a00;
+    box-shadow: 1px 1px 10px #b95d20, -1px 1px 10px #b95d20, -1px -1px 10px #b95d20, 1px -1px 10px #b95d20;
 }
 
 .logo_column img {
-    width: 70%;
-    height: auto;
     position: relative;
+    top: 1%;
+    left: 10%;
+    width: 60%;
+    height: auto;
     background-color: transparent;
 }
 
+
+
+/* share column*/
 .share_column {
     float: right;
     width: 50%;
-    height: 400px;
+    height: 500px;
     box-sizing: border-box;
     border-left: 3px solid #b95d20;
     border-left-style: outset;  
@@ -245,7 +239,12 @@ button img:hover {
     padding-left : 10%;
 }
 
-/*responsive columns*/
+.share_column p {
+    color: #ffffff;
+
+}
+
+/*responsive columns and features in share page*/
 @media screen and (max-width: 600px) {
     .share_column {
       width: 100%;
@@ -264,7 +263,8 @@ button img:hover {
     .logo_column img {
         position: relative;
         top: 10%;
-        left: 15%;
+        left: 10%;
+        width: 80%;
     }
 
     .share_row {
@@ -274,5 +274,11 @@ button img:hover {
     .share_column a {
         padding-top: 20%;
         padding-left: 0;
+    }
+
+    .header_name a {
+        position: absolute;
+        top : 30%;
+        left: 20%;
     }
   }
