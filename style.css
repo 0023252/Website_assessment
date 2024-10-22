@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 
 html {
@@ -73,6 +74,7 @@ html {
     text-align: right;
     padding-right: 20px;
     padding-top: 3%;
+    text-shadow: 1px 1px 4px black, -1px -1px 4px black, -1px 1px 4px black, 1px -1px 4px black;
 }
 
 #menu p:hover {
@@ -233,17 +235,19 @@ button img:hover {
     color: #000000;
     border: 2px solid #b95d20; 
     border-radius: 10px;
-    padding: 2%;   
+    padding: 3%;   
 }
 
 .email {
     color: #000000;
-    padding-left: 10%; 
+    padding-left: 10%;
+    padding-top: 20%;
+    text-align: center; 
 }
 
 .share_message {
     color: #000000;
-    font-family: 'Irish Grover', system-ui;
+    font-family: "Quicksand", sans-serif;
     font-size: 150%;
     text-align: center;
     padding-left: 10%;
@@ -295,3 +299,39 @@ button img:hover {
     }
   
   }
+
+  /*-----------------------------------------------------------------------*/
+  /*photos.html styles*/
+
+  /*body class = "photopage"*/
+  .photopage {
+    background-color: #ffffff;
+    margin: 0;
+  }
+
+  /*photo header block*/
+  .photo_header {
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #b95d20;
+    background: linear-gradient(#ffb950 10%,#b95d20 70%, #ffffff);  
+    width: 100%;
+    height: 130px;
+}
+
+/*making the hamburger menu stick to the header*/
+.photo_menu_button {
+    position: absolute;
+    top: 3%;
+    right: 4%;
+    background-color: transparent;
+    border: none;
+    filter: drop-shadow(0.35rem 0.35rem 0.2rem #00000080);
+}
+
+
+
+
+

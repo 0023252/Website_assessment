@@ -1,37 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Expressive_Lens | Photos</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- <script src="script.js"></script> -->
 </head>
 
 
 <body class = "photopage">
-    <h1> hello world </h1>
    
     
+    <!--header for the share page-->
+    <div class = "photo_header">
+        
 
-    <!-- menu -->
-    <div popover id="menu">
-        <div class = "menu_container">
-            <p><a href="home.html">Home</a></p>
-            <p><a href="share.html">Share</a></p>
-            <p><a href = "photos.html">Photos</a></p>
-        </div>
+        <!--website name-->
+       <div class = "header_name">
+           <a href = "home.html">Expressive Lens</a>
+       </div>
+       
+       <!--menu-->
+       <div popover id="menu">
+           <div class = "menu_container">
+               <p><a href="home.html">Home</a></p>
+               <p><a href="share.html">Share</a></p>
+               <p><a href = "photos.html">Photos</a></p>
+           </div>
+   
+           <button class="X" popovertarget="menu" popovertargetaction="hide">
+               <img width="40" src="cross-close-svgrepo-com.png" alt = "close-menu-button">
+           </button>
+       </div>
+   
+       
+       <button class = "photo_menu_button" popovertarget="menu">
+           <img width="70" src="burger-menu-right-svgrepo-com.png" alt = "open-menu-button">
+       </button>
+       
+   </div>    
+   
 
-        <button class="X" popovertarget="menu" popovertargetaction="hide">
-            <img width="40" src="cross-close-svgrepo-com.png" type=image/png>
-        </button>
-    </div>
+   
 
 
-    <button class = "menu_button" popovertarget="menu">
-        <img width="70" src="burger-menu-right-svgrepo-com.png" type=image/png>
-    </button>
+
+
+
 </body>
 
 </html>
