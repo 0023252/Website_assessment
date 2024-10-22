@@ -125,52 +125,47 @@ button img:hover {
     }
 }
 
- 
-/*audio*/
-.audio_container{
-    position: absolute;
-    top: 80%;
-    left: 3%;
-}
-
 
 /*------------------------------------------------------------------------------------*/
 
 /*share.html styles*/
 
+/*body class = "sharepage"*/
 .sharepage {
-    background-color: #000000;
+    background-color: #ffffff;
     margin: 0;
 }
 
+/*header block*/
 .share_header {
     display: block;
     position: sticky;
     top: 0;
     left: 0;
     background-color: #b95d20;
-    background: linear-gradient(#ffb950 10%,#b95d20 70%, #000000);  
+    background: linear-gradient(#ffb950 10%,#b95d20 70%, #ffffff);  
     width: 100%;
     height: 130px;
 }
 
-/*making the hamburger menu stick with the header*/
-.share_header .menu_button img {
-    position: relative;
-    top: 0;
-    right: 0;
+/*making the hamburger menu stick to the header*/
+.share_menu_button {
+    position: absolute;
+    top: 3%;
+    right: 4%;
+    background-color: transparent;
+    border: none;
+    filter: drop-shadow(0.35rem 0.35rem 0.2rem #00000080);
 }
 
 
-/*website name in sharepage*/
 
+/*website name in sharepage*/
 .header_name {
     width: 40%;
     height: 130px;
     position: relative;
 }
-
-
 
 .header_name a{
     position: absolute;
@@ -187,8 +182,9 @@ button img:hover {
     text-shadow: 1px 1px 10px #ff6a00, -1px 1px 10px #ff6a00, -1px -1px 10px #ff6a00, 1px -1px 10px #ff6a00;
 }
 
-/*columns*/
 
+
+/*columns*/
 .share_row {
     padding: 5%;
 }
@@ -198,6 +194,7 @@ button img:hover {
     clear: both;
 }
 
+
 /*logo column*/
 .logo_column {
     float: left;
@@ -206,7 +203,7 @@ button img:hover {
     box-sizing: border-box;
     border-right: 3px solid #b95d20; 
     border-right-style: inset; 
-    color: #ffffff;
+    color: #000000;
 }
 .logo_column img:hover {
     box-shadow: 1px 1px 10px #b95d20, -1px 1px 10px #b95d20, -1px -1px 10px #b95d20, 1px -1px 10px #b95d20;
@@ -221,8 +218,6 @@ button img:hover {
     background-color: transparent;
 }
 
-
-
 /* share column*/
 .share_column {
     float: right;
@@ -235,17 +230,29 @@ button img:hover {
 
 .share_column a {
     text-decoration: none;
-    color: #ffffff;
-    padding-left : 10%;
+    color: #000000;
+    border: 2px solid #b95d20; 
+    border-radius: 10px;
+    padding: 2%;   
 }
 
-.share_column p {
-    color: #ffffff;
+.email {
+    color: #000000;
+    padding-left: 10%; 
+}
 
+.share_message {
+    color: #000000;
+    font-family: 'Irish Grover', system-ui;
+    font-size: 150%;
+    text-align: center;
+    padding-left: 10%;
 }
 
 /*responsive columns and features in share page*/
 @media screen and (max-width: 600px) {
+    
+    /*changing the columns when screen is smaller*/
     .share_column {
       width: 100%;
       border-top: 3px solid #b95d20;
@@ -271,9 +278,14 @@ button img:hover {
         padding: 10%;
     }
 
-    .share_column a {
+    .email {
+        padding-top: 20%;   
+    }
+
+    .share_message {
         padding-top: 20%;
-        padding-left: 0;
+        font-size: 150%;
+        text-align: left;
     }
 
     .header_name a {
@@ -281,4 +293,5 @@ button img:hover {
         top : 30%;
         left: 20%;
     }
+  
   }
