@@ -153,8 +153,8 @@ button img:hover {
 /*making the hamburger menu stick to the header*/
 .share_menu_button {
     position: absolute;
-    top: 3%;
-    right: 4%;
+    top: 15%;
+    right: 3%;
     background-color: transparent;
     border: none;
     filter: drop-shadow(0.35rem 0.35rem 0.2rem #00000080);
@@ -324,14 +324,32 @@ button img:hover {
 /*making the hamburger menu stick to the header*/
 .photo_menu_button {
     position: absolute;
-    top: 3%;
-    right: 4%;
+    top: 15%;
+    right: 3%;
     background-color: transparent;
     border: none;
     filter: drop-shadow(0.35rem 0.35rem 0.2rem #00000080);
 }
 
+/*photos row (this is hte parent div of the photos_container)*/
+.photos_row {
+    padding: 2%;
+}
 
+.photos_row::after{
+    display: table;
+    clear: both;
+}
 
+/*div that contains the images*/
+.photos_container {
+    float: left;
+    width: 30%;
+    height: 20%;
+    padding: 5px;
+}
 
-
+.photos_container img {
+    width: 100%;
+    height: auto;
+}   
