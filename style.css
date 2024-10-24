@@ -47,7 +47,7 @@ html {
 
 .image {
     width: 100%;
-    position: absolute;
+    position: sticky;
 }
 
 .image img {
@@ -56,8 +56,8 @@ html {
     filter: contrast(130%) brightness(100%) saturate(1.5) blur(5px);
 }
 
-/*styling the menu*/
 
+/*styling the menu*/
 #menu a {
     color: #ffffff;
     font-size: 2vw;
@@ -114,8 +114,25 @@ button img:hover {
     background-color: transparent;
     border: none;   
 }
-/*responsive padding adjustment for different sized screens*/
+
+.introduction {
+    position: absolute;
+    width: 100%;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.introduction h1 {
+    color: #ffffff;
+    font-size: 3vw;
+}
+
+
+/*responsive adjustment for different sized screens*/
 @media screen and (max-width: 600px) {
+    .name a {
+        font-size: 3vw;
+    }
     .menu_container {
         padding-top: 12%;
     }
@@ -124,6 +141,9 @@ button img:hover {
     }
     #menu p {
         padding-top: 3%;
+    }
+    .introduction h1 {
+        font-size: 6vw;
     }
 }
 
@@ -331,25 +351,81 @@ button img:hover {
     filter: drop-shadow(0.35rem 0.35rem 0.2rem #00000080);
 }
 
-/*photos row (this is hte parent div of the photos_container)*/
+/*photos row (this is the parent div of the photos_container)*/
 .photos_row {
     padding: 2%;
+    display: grid;
+    width: 30%;
 }
 
-.photos_row::after{
-    display: table;
-    clear: both;
-}
 
 /*div that contains the images*/
 .photos_container {
-    float: left;
-    width: 30%;
-    height: 20%;
-    padding: 5px;
+    width: 100%;
 }
 
 .photos_container img {
     width: 100%;
     height: auto;
 }   
+
+
+/*second column*/
+.photos_row_2 {
+    position: absolute;
+    top: 0;
+    left: 33%;
+    width: 30%;
+    padding: 2%;
+    display: grid;
+}
+
+
+/*div that contains the images*/
+.photos_container_2 {
+    width: 100%;
+}
+
+.photos_container_2 img {
+    width: 100%;
+    height: auto;
+}   
+
+/*third column*/
+.photos_row_3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    padding: 2%;
+    display: grid;
+}
+
+
+/*div that contains the images*/
+.photos_container_3 {
+    width: 100%;
+}
+
+.photos_container_3 img {
+    width: 100%;
+    height: auto;
+} 
+
+
+
+
+
+/*responsive photos*/
+@media screen and (max-width: 600px) {
+    .photos_container { 
+        width: 100%;
+    }
+
+
+}
+
+
+.photos_row_container {
+    position:absolute;
+}
