@@ -122,10 +122,32 @@ button img:hover {
     text-align: center;
 }
 
+/*this is the section under the image in homepage*/
 .introduction h1 {
     color: #ffffff;
     font-size: 3vw;
 }
+
+.Introduction_photos {
+    position: absolute;
+    left: 3%;
+    width: 30%;
+    height: 1000px;
+}
+
+.Introduction_photos p {
+    position: absolute;
+    text-align: left;
+    font-size: 90%;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
 
 
 /*responsive adjustment for different sized screens*/
@@ -265,6 +287,10 @@ button img:hover {
     text-align: center; 
 }
 
+.share_column a:hover {
+    box-shadow: 1px 1px 10px #b95d20, -1px 1px 10px #b95d20, -1px -1px 10px #b95d20, 1px -1px 10px #b95d20;
+}
+
 .share_message {
     color: #000000;
     font-family: "Quicksand", sans-serif;
@@ -351,6 +377,17 @@ button img:hover {
     filter: drop-shadow(0.35rem 0.35rem 0.2rem #00000080);
 }
 
+
+/*This is the parent div of the photo_row*/
+.photos_row_container {
+    width: 80%;
+    position:absolute;
+    left: 10%;
+    top: 20%;
+}
+
+
+
 /*photos row (this is the parent div of the photos_container)*/
 .photos_row {
     padding: 2%;
@@ -362,9 +399,11 @@ button img:hover {
 /*div that contains the images*/
 .photos_container {
     width: 100%;
+    padding: 4%;
 }
 
 .photos_container img {
+    border: 3px solid #b95d20;
     width: 100%;
     height: auto;
 }   
@@ -375,28 +414,31 @@ button img:hover {
     position: absolute;
     top: 0;
     left: 33%;
-    width: 30%;
+    width: 32%;
     padding: 2%;
     display: grid;
 }
 
 
-/*div that contains the images*/
+/*div that contains the image*/
 .photos_container_2 {
     width: 100%;
+    padding: 4%;
 }
 
 .photos_container_2 img {
+    border: 3px solid #b95d20;
     width: 100%;
     height: auto;
 }   
+
 
 /*third column*/
 .photos_row_3 {
     position: absolute;
     top: 0;
     right: 0;
-    width: 30%;
+    width: 28%;
     padding: 2%;
     display: grid;
 }
@@ -405,15 +447,28 @@ button img:hover {
 /*div that contains the images*/
 .photos_container_3 {
     width: 100%;
+    padding: 4%;
 }
 
 .photos_container_3 img {
+    border: 3px solid #b95d20;
     width: 100%;
     height: auto;
 } 
 
 
+/*designing the images when hover*/
+.photos_container:hover {
+    box-shadow: 1px 1px 10px #b95d20, -1px 1px 10px #b95d20, -1px -1px 10px #b95d20, 1px -1px 10px #b95d20;
+}
 
+.photos_container_2:hover {
+    box-shadow: 1px 1px 10px #b95d20, -1px 1px 10px #b95d20, -1px -1px 10px #b95d20, 1px -1px 10px #b95d20;
+}
+
+.photos_container_3:hover {
+    box-shadow: 1px 1px 10px #b95d20, -1px 1px 10px #b95d20, -1px -1px 10px #b95d20, 1px -1px 10px #b95d20;
+}
 
 
 /*responsive photos*/
@@ -426,6 +481,3 @@ button img:hover {
 }
 
 
-.photos_row_container {
-    position:absolute;
-}
